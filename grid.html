@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css grid</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.grid{
+			background-color: green;
+			display: grid;
+			padding: 20px;
+			grid-column-gap: 20px;
+			grid-row-gap:10px;
+			grid-template-columns: 200px 200px auto ; 
+			<!-- auto says that  the 3ed column should auto resize-->
+
+		}
+		.grid-item{
+			background-color: white;
+			font-size:20px;
+			text-align:center;
+			padding:20px;
+		}
+		h1{
+			text-align: center;
+			color:magenta;
+		}
+	</style>
+</head>
+<body>
+	<h1>IPL 2020 Teams</h1>
+	<div class="grid">
+		<div class="grid-item">CSK</div>
+		<div class="grid-item">DC</div>
+		<div class="grid-item">KXIP</div>
+		<div class="grid-item">KKR</div>
+		<div class="grid-item">MI</div>
+		<div class="grid-item">RR</div>
+		<div class="grid-item">RCB</div>
+		<div class="grid-item">SH</div>
+		<div class="grid-item">PP</div>
+	</div>
+</body>
+</html>
